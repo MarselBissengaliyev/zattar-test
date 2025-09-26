@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zattar.kz — Frontend Test Project
 
-## Getting Started
+## 📦 Технологии
 
-First, run the development server:
+- **Next.js 13+ (App Router)** — Server-Side Rendering
+- **TypeScript**
+- **TailwindCSS**
+- **shadcn/ui** — компоненты UI
+- **lucide-react / @radix-ui/react-icons** — иконки
+- **Mock JSON** для категорий и товаров
+
+---
+
+## 🗂 Структура проекта
+
+/mock
+├─ categories.json
+└─ products.json
+/src
+/app
+├─ page.tsx # Главная страница
+/category
+└─ [id]
+    └─ page.tsx # Страница категории
+/components
+├─ Header.tsx
+├─ SearchBar.tsx
+├─ CategoryMenu.tsx
+├─ ProductCard.tsx
+├─ Breadcrumbs.tsx
+├─ FiltersSidebar.tsx
+└─ ...
+/types
+└─ index.ts # Типы Category, Product
+
+---
+
+## 🖥 Страницы
+
+### 1️⃣ Главная страница (`/`)
+
+- Хедер с логотипом, выбором города и навигацией  
+- Строка поиска с иконкой и анимацией  
+- Многоуровневое меню категорий (3 уровня)  
+- Промо-баннер (заглушка)  
+- Популярные категории  
+- Сетка карточек товаров с hover-эффектами, кнопкой "Купить", скидками
+
+### 2️⃣ Страница категории (`/category/[id]`)
+
+- Breadcrumbs  
+- Заголовок категории  
+- Сортировка товаров (по цене, популярности, новизне)  
+- Сайдбар фильтров с чекбоксами и сворачиванием секций  
+- Сетка товаров с hover-эффектами, скидками и описанием при наведении  
+
+---
+
+## 🚀 Запуск проекта
+
+1. Установить зависимости:
 
 ```bash
+npm install
+# или
+yarn
+Запустить проект:
+
 npm run dev
-# or
+# или
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Открыть в браузере: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚙ Mock данные
+Файлы mock/categories.json и mock/products.json содержат данные для категорий и товаров.
+Используются для отображения списка категорий и сетки товаров без API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+💡 Особенности реализации
+Server-Side Rendering (SSR) через Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Адаптивная верстка: mobile + desktop
 
-## Learn More
+Компонентный подход: Header, SearchBar, CategoryMenu, ProductCard и др.
 
-To learn more about Next.js, take a look at the following resources:
+UX/UI улучшения:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Hover эффекты, тени и анимации
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Раскрывающиеся подкатегории
 
-## Deploy on Vercel
+Плавное увеличение карточек товаров
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dropdown города и сортировки
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Появление описания и кнопки "Купить" на hover
+
+🔗 Деплой (опционально)
+Можно задеплоить на Vercel / Netlify / Render.
+
+Автор
+Марсель Бисенгалиев
+
+yaml
+---

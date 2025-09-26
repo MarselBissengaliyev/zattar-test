@@ -4,7 +4,6 @@ export default function SearchBar() {
   return (
     <div className="p-4 border-b bg-white">
       <div className="relative max-w-lg mx-auto">
-        {/* Иконка поиска */}
         <GlassesIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
 
         <input

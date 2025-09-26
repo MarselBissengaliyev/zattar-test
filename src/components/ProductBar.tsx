@@ -14,7 +14,6 @@ export default function ProductCard({ product }: Props) {
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-90"
         />
-        {/* Overlay для быстрого действия */}
         <div className="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <button className="bg-white p-2 rounded-full shadow hover:bg-gray-100">
             <ShoppingCartIcon className="w-5 h-5 text-blue-600" />

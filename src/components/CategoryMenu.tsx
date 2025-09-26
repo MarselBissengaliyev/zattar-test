@@ -31,7 +31,7 @@ function CategoryItem({ category, level }: CategoryItemProps) {
 
   const handleClick = (e: React.MouseEvent) => {
     if (hasChildren) {
-      e.preventDefault(); // Чтобы ссылка не срабатывала, если есть дети
+      e.preventDefault(); 
       setOpen(!open);
     }
   };

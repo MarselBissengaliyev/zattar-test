@@ -19,15 +19,13 @@ export default async function HomePage() {
       <SearchBar />
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row p-4 gap-6">
-        {/* Sidebar */}
+
         <aside className="w-full lg:w-64 sticky top-20 h-[calc(100vh-80px)] overflow-y-auto bg-white border rounded-lg shadow-sm p-4">
           <h3 className="text-lg font-semibold mb-3">Категории</h3>
           <CategoryMenu categories={categories} />
         </aside>
 
-        {/* Main Content */}
         <main className="flex-1 space-y-6">
-          {/* Promo Banner */}
           <div className="relative bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl h-48 flex flex-col items-center justify-center text-white overflow-hidden shadow-lg p-4">
             <div className="text-center space-y-2 animate-fade-in">
               <h2 className="text-3xl sm:text-4xl font-bold">Супер скидки этой недели!</h2>
@@ -38,7 +36,6 @@ export default async function HomePage() {
             </div>
           </div>
 
-          {/* Products Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((p) => (
               <div

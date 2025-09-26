@@ -19,12 +19,10 @@ export default function Header() {
   return (
     <header className="bg-white shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 sm:px-8 sm:py-4">
-        {/* Логотип */}
         <Link href="/" className="text-2xl font-bold text-blue-700 cursor-pointer hover:text-blue-600 transition">
           Zattar
         </Link>
 
-        {/* Mobile Hamburger */}
         <div className="sm:hidden">
           <button
             onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
@@ -34,7 +32,6 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Desktop Menu */}
         <div className="hidden sm:flex sm:items-center sm:gap-6">
           <Select>
             <SelectTrigger className="w-40 flex items-center justify-between border rounded-md px-3 py-2">
@@ -65,7 +62,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="sm:hidden bg-white shadow-md border-t">
           <div className="flex flex-col gap-2 p-4">

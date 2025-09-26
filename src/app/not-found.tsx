@@ -4,7 +4,6 @@ import Link from "next/link";
 import { HomeIcon, TagIcon } from "lucide-react";
 
 export default function NotFoundPage() {
-  // Примеры популярных категорий
   const categories = [
     { id: 111, name: "iPhone" },
     { id: 12, name: "Ноутбуки" },
@@ -21,7 +20,6 @@ export default function NotFoundPage() {
         К сожалению, запрашиваемая страница не существует или была удалена.
       </p>
 
-      {/* Ссылка на главную */}
       <Link
         href="/"
         className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition mb-4"
@@ -30,7 +28,6 @@ export default function NotFoundPage() {
         На главную
       </Link>
 
-      {/* Ссылки на категории */}
       <div className="flex flex-wrap justify-center gap-3">
         {categories.map((cat) => (
           <Link

@@ -44,21 +44,18 @@ export default async function CategoryPage({ params }: Props) {
       <SearchBar />
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row p-4 gap-6">
-        {/* Sidebar */}
         <aside className="w-full lg:w-64 sticky top-20 h-[calc(100vh-80px)] overflow-y-auto space-y-6 bg-white border rounded-lg shadow-sm p-4">
           <h3 className="text-lg font-semibold mb-3">Категории</h3>
           <CategoryMenu categories={categories} />
           <FiltersSidebar filters={filters} />
         </aside>
 
-        {/* Main Content */}
         <main className="flex-1 space-y-6">
-          {/* Breadcrumbs */}
+
           <div className="text-sm text-gray-500">
             <Breadcrumbs path={categoryPath} />
           </div>
 
-          {/* Заголовок категории */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <h1 className="text-2xl font-bold text-gray-800">
               {categoryPath[categoryPath.length - 1]?.name || "Категория"}
@@ -66,7 +63,6 @@ export default async function CategoryPage({ params }: Props) {
             <span className="text-gray-500">{categoryProducts.length} товаров</span>
           </div>
 
-          {/* Сортировка */}
           <div className="mb-4">
             <div className="inline-block bg-white border rounded-lg shadow-sm p-2">
               <Select>
@@ -82,7 +78,7 @@ export default async function CategoryPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Сетка продуктов */}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {categoryProducts.map(p => (
               <div
