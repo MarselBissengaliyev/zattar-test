@@ -30,8 +30,7 @@
 ├─ Breadcrumbs.tsx
 ├─ FiltersSidebar.tsx
 └─ ...
-/types
-└─ index.ts # Типы Category, Product
+├─ index.ts # Типы Category, Product
 ```
 
 ---
