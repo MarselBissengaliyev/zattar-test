@@ -12,7 +12,7 @@
 ---
 
 ## 🗂 Структура проекта
-
+```yaml
 /mock
 ├─ categories.json
 └─ products.json
@@ -32,6 +32,7 @@
 └─ ...
 /types
 └─ index.ts # Типы Category, Product
+```
 
 ---
 
