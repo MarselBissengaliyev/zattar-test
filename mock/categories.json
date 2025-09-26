@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Электроника",
+    "children": [
+      {
+        "id": 11,
+        "name": "Смартфоны",
+        "children": [
+          {"id": 111, "name": "iPhone"},
+          {"id": 112, "name": "Samsung"},
+          {"id": 113, "name": "Xiaomi"}
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Ноутбуки",
+        "children": [
+          {"id": 121, "name": "MacBook"},
+          {"id": 122, "name": "Dell"},
+          {"id": 123, "name": "HP"}
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Наушники",
+        "children": [
+          {"id": 131, "name": "AirPods"},
+          {"id": 132, "name": "Sony"},
+          {"id": 133, "name": "Bose"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Одежда",
+    "children": [
+      {
+        "id": 21,
+        "name": "Мужская",
+        "children": [
+          {"id": 211, "name": "Футболки"},
+          {"id": 212, "name": "Джинсы"}
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Женская",
+        "children": [
+          {"id": 221, "name": "Платья"},
+          {"id": 222, "name": "Куртки"}
+        ]
+      }
+    ]
+  }
+]

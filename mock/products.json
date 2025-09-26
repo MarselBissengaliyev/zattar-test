@@ -1,0 +1,18 @@
+[
+  {"id": 1, "name": "iPhone 14", "price": 400000, "categoryId": 111, "image": "/placeholder.png"},
+  {"id": 2, "name": "iPhone 13", "price": 350000, "categoryId": 111, "image": "/placeholder.png"},
+  {"id": 3, "name": "Samsung Galaxy S23", "price": 320000, "categoryId": 112, "image": "/placeholder.png"},
+  {"id": 4, "name": "Samsung Galaxy A53", "price": 180000, "categoryId": 112, "image": "/placeholder.png"},
+  {"id": 5, "name": "Xiaomi 13 Pro", "price": 280000, "categoryId": 113, "image": "/placeholder.png"},
+  {"id": 6, "name": "MacBook Pro", "price": 800000, "categoryId": 121, "image": "/placeholder.png"},
+  {"id": 7, "name": "MacBook Air", "price": 600000, "categoryId": 121, "image": "/placeholder.png"},
+  {"id": 8, "name": "Dell XPS 15", "price": 550000, "categoryId": 122, "image": "/placeholder.png"},
+  {"id": 9, "name": "HP Spectre x360", "price": 500000, "categoryId": 123, "image": "/placeholder.png"},
+  {"id": 10, "name": "AirPods Pro", "price": 120000, "categoryId": 131, "image": "/placeholder.png"},
+  {"id": 11, "name": "Sony WH-1000XM5", "price": 150000, "categoryId": 132, "image": "/placeholder.png"},
+  {"id": 12, "name": "Bose QuietComfort 45", "price": 140000, "categoryId": 133, "image": "/placeholder.png"},
+  {"id": 13, "name": "Мужская футболка", "price": 8000, "categoryId": 211, "image": "/placeholder.png"},
+  {"id": 14, "name": "Мужские джинсы", "price": 15000, "categoryId": 212, "image": "/placeholder.png"},
+  {"id": 15, "name": "Женское платье", "price": 20000, "categoryId": 221, "image": "/placeholder.png"},
+  {"id": 16, "name": "Женская куртка", "price": 30000, "categoryId": 222, "image": "/placeholder.png"}
+]
